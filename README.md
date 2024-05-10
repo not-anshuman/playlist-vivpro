@@ -1,7 +1,6 @@
 Music Playlist API Project
 
 This is a Django-based API project that allows users to upload and view song playlists. The API provides endpoints for listing songs, searching by title, retrieving specific songs, and rating songs. Additionally, a Postman Collection has been included for testing the API endpoints.
-Prerequisites
 
 Before you begin, ensure you have the following installed:
 
