@@ -31,13 +31,19 @@ cd playlist-vivpro
 poetry install
 ```
 
-3. Apply Migrations
+3. Activate Poetry shell
+
+```
+poetry shell
+```
+
+4. Apply Migrations
 
 ```
 poetry run python manage.py migrate
 ```
 
-4. Run the Development Server
+5. Run the Development Server
 
 ```
 poetry run python manage.py runserver
