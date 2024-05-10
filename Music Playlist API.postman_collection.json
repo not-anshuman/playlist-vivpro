@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "64473c6a-15b3-4c66-be06-b041b8595508",
+		"name": "Music Playlist API",
+		"description": "Postman collection for Music Playlist API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20658532"
+	},
+	"item": [
+		{
+			"name": "Upload JSON Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/anshu/Downloads/playlist[76].json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/songs/upload-json/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"songs",
+						"upload-json",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/songs?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"songs"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Song by Title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/songs?search=3AM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"songs"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "3AM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve a Specific Song",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/songs/5vYA1mW9g2Coh1HUFUSmlb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"songs",
+						"5vYA1mW9g2Coh1HUFUSmlb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rate a Song",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer <your_access_token>"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"rating\": 5\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/rate-song/5vYA1mW9g2Coh1HUFUSmlb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"rate-song",
+						"5vYA1mW9g2Coh1HUFUSmlb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
