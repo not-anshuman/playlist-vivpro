@@ -20,7 +20,7 @@ Follow these steps to set up the project locally.
 1. Clone the Repository
 
 ```
-git clone [<repository-url>](https://github.com/not-anshuman/playlist-vivpro.git)
+git clone https://github.com/not-anshuman/playlist-vivpro.git
 cd playlist-vivpro
 ```
 
@@ -39,13 +39,13 @@ poetry shell
 4. Apply Migrations
 
 ```
-poetry run python manage.py migrate
+python manage.py migrate
 ```
 
 5. Run the Development Server
 
 ```
-poetry run python manage.py runserver
+python manage.py runserver
 ```
 
 ----------------------------------------------------------------------------------------------
