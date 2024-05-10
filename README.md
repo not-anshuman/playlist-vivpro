@@ -48,6 +48,12 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+6. Run test cases
+
+```
+python manage.py test
+```
+
 ----------------------------------------------------------------------------------------------
 
 API Usage
